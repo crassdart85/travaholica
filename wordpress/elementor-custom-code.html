@@ -1,0 +1,37 @@
+<!-- ============================================================
+  Travaholica — paste this into:
+  Elementor > Custom Code > Add New > Location: Body End
+  (requires Elementor Pro), OR use a plugin like "Header Footer Code Manager"
+  ============================================================ -->
+<script>
+  // Mobile menu toggle
+  const burger = document.getElementById('burger');
+  const panel = document.getElementById('mobilePanel');
+
+  burger?.addEventListener('click', () => {
+    const open = panel.style.display === 'block';
+    panel.style.display = open ? 'none' : 'block';
+    burger.setAttribute('aria-expanded', String(!open));
+  });
+
+  // Form submissions
+  const quoteForm = document.getElementById('quoteForm');
+  const quoteMsg = document.getElementById('quoteMsg');
+
+  quoteForm?.addEventListener('submit', (e) => {
+    e.preventDefault();
+    quoteMsg.textContent = "Thanks! We'll email you within 24 hours.";
+    quoteForm.reset();
+  });
+
+  const emailForm = document.getElementById('emailForm');
+  const emailMsg = document.getElementById('emailMsg');
+
+  emailForm?.addEventListener('submit', (e) => {
+    e.preventDefault();
+    emailMsg.textContent = "You're in! Check your inbox soon.";
+    emailForm.reset();
+  });
+
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>

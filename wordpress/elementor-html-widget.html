@@ -1,0 +1,419 @@
+  <!-- ============================================================
+    Travaholica — paste this into an Elementor HTML widget.
+    Page template must be set to "Elementor Canvas" (no header/footer).
+    ============================================================ -->
+
+    <!-- Header -->
+    <header class="header">
+      <div class="container nav">
+        <a href="#" class="brand" aria-label="Travaholica Home">
+          <span class="logo" aria-hidden="true"></span>
+          <span>Travaholica</span>
+        </a>
+
+        <nav class="links" aria-label="Primary navigation">
+          <a href="#tours">Tours</a>
+          <a href="#destinations">Destinations</a>
+          <a href="#why">Why Us</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="cta">
+          <a class="btn btn-ghost" href="#tours">Explore Tours</a>
+          <a class="btn btn-primary" href="#contact">Book / Inquire</a>
+        </div>
+
+        <button class="burger" id="burger" aria-expanded="false" aria-controls="mobilePanel">
+          ☰ <span class="sr">Menu</span>
+        </button>
+      </div>
+
+      <div class="mobile-panel" id="mobilePanel">
+        <div class="container">
+          <div class="mobile-links">
+            <a href="#tours">Tours <small>Browse upcoming experiences</small></a>
+            <a href="#destinations">Destinations <small>Explore by country</small></a>
+            <a href="#why">Why Us <small>What makes us different</small></a>
+            <a href="#reviews">Reviews <small>Traveler stories</small></a>
+            <a href="#contact">Book / Inquire <small>Talk to a travel expert</small></a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero" id="top">
+      <div class="container hero-grid">
+        <div>
+          <div class="chip">✨ Handcrafted cultural journeys</div>
+          <h1>Handcrafted Cultural Journeys in Egypt &amp; Beyond</h1>
+          <p>
+            Small groups. Local expert guides. Stress-free planning — designed for travelers who want authenticity,
+            not tourist checklists.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#tours">Explore Tours</a>
+            <a class="btn btn-secondary" href="#contact">Talk to an Expert</a>
+          </div>
+
+          <div class="hero-badges">
+            <span class="pill"><span class="stars">★★★★★</span> 4.9 rated</span>
+            <span class="pill">✅ Flexible cancellation</span>
+            <span class="pill">🔒 Secure payments</span>
+            <span class="pill">🧭 Local guides</span>
+          </div>
+        </div>
+
+        <aside class="hero-card" aria-label="Quick inquiry form">
+          <h3>Get a quick quote</h3>
+          <p>Tell us your destination & dates — we'll reply within 24 hours.</p>
+          <form class="hero-form" id="quoteForm">
+            <div class="field">
+              <label for="dest">Destination</label>
+              <select id="dest" class="input">
+                <option>Egypt</option>
+                <option>Nepal</option>
+                <option>Jordan</option>
+                <option>Morocco</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="dates">Preferred dates</label>
+              <input id="dates" class="input" placeholder="e.g. 10–15 March" />
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" type="email" class="input" placeholder="you@example.com" required />
+            </div>
+            <button class="btn btn-primary" type="submit">Request quote</button>
+            <div id="quoteMsg" class="muted" style="font-size:12px;"></div>
+          </form>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Trust bar -->
+    <section class="trust">
+      <div class="container trust-row">
+        <div class="trust-item">
+          <span class="dot"></span>
+          <div><strong>Licensed &amp; insured</strong><span>Travel with confidence</span></div>
+        </div>
+        <div class="trust-item">
+          <span class="dot"></span>
+          <div><strong>Flexible cancellation</strong><span>Clear refund policy</span></div>
+        </div>
+        <div class="trust-item">
+          <span class="dot"></span>
+          <div><strong>Secure payments</strong><span>Protected checkout</span></div>
+        </div>
+        <div class="trust-item">
+          <span class="dot"></span>
+          <div><strong>Local expert guides</strong><span>Authentic experiences</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured tours -->
+    <section class="section" id="tours">
+      <div class="container">
+        <div class="section-title">
+          <div>
+            <h2>Popular Experiences</h2>
+            <p>Start with our most-loved trips — optimized itineraries, clear inclusions, and reliable support.</p>
+          </div>
+          <a class="btn btn-ghost" href="#">View all tours</a>
+        </div>
+
+        <div class="grid tour-grid">
+          <article class="card">
+            <div class="card-media">
+              <img alt="Nile cruise" src="https://images.unsplash.com/photo-1582582621959-48d27397dc4c?auto=format&fit=crop&w=1400&q=80">
+              <span class="tag">Featured</span>
+              <button class="fav" aria-label="Add to wishlist">
+                <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                  <path d="M20.8 4.6c-1.5-1.4-3.9-1.4-5.4 0l-.7.7-.7-.7c-1.5-1.4-3.9-1.4-5.4 0-1.7 1.6-1.7 4.2 0 5.8L12 21l8.8-10.6c1.7-1.6 1.7-4.2 0-5.8z"/>
+                </svg>
+              </button>
+            </div>
+            <div class="card-body">
+              <div class="rating"><span class="stars">★★★★★</span> 4.8 <span class="muted">(32 reviews)</span></div>
+              <h3 class="card-title">12-Day Egypt Highlights + Nile Cruise</h3>
+              <div class="meta">
+                <span>🕒 12 days</span>
+                <span>👥 Small group</span>
+                <span>🗺 Cairo • Luxor • Aswan</span>
+              </div>
+              <div class="price-row">
+                <div>
+                  <div class="price">$1,840</div>
+                  <div class="per">per person</div>
+                </div>
+                <span class="muted" style="font-weight:700; font-size:13px;">From</span>
+              </div>
+              <div class="card-actions">
+                <a class="btn btn-primary" href="#contact">View details</a>
+                <a class="btn btn-ghost" href="#contact">Book</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-media">
+              <img alt="Pyramids" src="https://images.unsplash.com/photo-1544986581-efac024faf62?auto=format&fit=crop&w=1400&q=80">
+              <button class="fav" aria-label="Add to wishlist">
+                <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                  <path d="M20.8 4.6c-1.5-1.4-3.9-1.4-5.4 0l-.7.7-.7-.7c-1.5-1.4-3.9-1.4-5.4 0-1.7 1.6-1.7 4.2 0 5.8L12 21l8.8-10.6c1.7-1.6 1.7-4.2 0-5.8z"/>
+                </svg>
+              </button>
+            </div>
+            <div class="card-body">
+              <div class="rating"><span class="stars">★★★★☆</span> 4.6 <span class="muted">(18 reviews)</span></div>
+              <h3 class="card-title">5-Day Cairo &amp; Giza Essentials</h3>
+              <div class="meta">
+                <span>🕒 5 days</span>
+                <span>🏛 Museums</span>
+                <span>✅ Airport pickup</span>
+              </div>
+              <div class="price-row">
+                <div>
+                  <div class="price">$980</div>
+                  <div class="per">per person</div>
+                </div>
+                <span class="muted" style="font-weight:700; font-size:13px;">From</span>
+              </div>
+              <div class="card-actions">
+                <a class="btn btn-primary" href="#contact">View details</a>
+                <a class="btn btn-ghost" href="#contact">Book</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-media">
+              <img alt="Himalayas trek" src="https://images.unsplash.com/photo-1544735716-6d594f2b36c6?auto=format&fit=crop&w=1400&q=80">
+              <button class="fav" aria-label="Add to wishlist">
+                <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                  <path d="M20.8 4.6c-1.5-1.4-3.9-1.4-5.4 0l-.7.7-.7-.7c-1.5-1.4-3.9-1.4-5.4 0-1.7 1.6-1.7 4.2 0 5.8L12 21l8.8-10.6c1.7-1.6 1.7-4.2 0-5.8z"/>
+                </svg>
+              </button>
+            </div>
+            <div class="card-body">
+              <div class="rating"><span class="stars">★★★★★</span> 4.9 <span class="muted">(41 reviews)</span></div>
+              <h3 class="card-title">5-Day Nepal Viewpoints &amp; Culture</h3>
+              <div class="meta">
+                <span>🕒 5 days</span>
+                <span>⛰ Scenic</span>
+                <span>🧑‍🤝‍🧑 Guided</span>
+              </div>
+              <div class="price-row">
+                <div>
+                  <div class="price">$1,250</div>
+                  <div class="per">per person</div>
+                </div>
+                <span class="muted" style="font-weight:700; font-size:13px;">From</span>
+              </div>
+              <div class="card-actions">
+                <a class="btn btn-primary" href="#contact">View details</a>
+                <a class="btn btn-ghost" href="#contact">Book</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Destinations -->
+    <section class="section" id="destinations" style="padding-top:0;">
+      <div class="container">
+        <div class="section-title">
+          <div>
+            <h2>Explore By Destination</h2>
+            <p>Help visitors browse the way they think: by country first, then by trip type.</p>
+          </div>
+        </div>
+
+        <div class="grid" style="grid-template-columns: repeat(4, 1fr); gap: 14px;">
+          <a class="card" href="#" style="min-height: 140px;">
+            <div class="card-media" style="height: 140px;">
+              <img alt="Egypt" src="https://images.unsplash.com/photo-1539768942893-daf53e448371?auto=format&fit=crop&w=1400&q=80">
+            </div>
+            <div class="card-body" style="padding: 12px;">
+              <strong>Egypt</strong>
+              <span class="muted" style="font-size:12px;">History • Nile • Culture</span>
+            </div>
+          </a>
+          <a class="card" href="#" style="min-height: 140px;">
+            <div class="card-media" style="height: 140px;">
+              <img alt="Nepal" src="https://images.unsplash.com/photo-1521295121783-8a321d551ad2?auto=format&fit=crop&w=1400&q=80">
+            </div>
+            <div class="card-body" style="padding: 12px;">
+              <strong>Nepal</strong>
+              <span class="muted" style="font-size:12px;">Mountains • Trekking</span>
+            </div>
+          </a>
+          <a class="card" href="#" style="min-height: 140px;">
+            <div class="card-media" style="height: 140px;">
+              <img alt="Jordan" src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1400&q=80">
+            </div>
+            <div class="card-body" style="padding: 12px;">
+              <strong>Jordan</strong>
+              <span class="muted" style="font-size:12px;">Petra • Desert</span>
+            </div>
+          </a>
+          <a class="card" href="#" style="min-height: 140px;">
+            <div class="card-media" style="height: 140px;">
+              <img alt="Morocco" src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=1400&q=80">
+            </div>
+            <div class="card-body" style="padding: 12px;">
+              <strong>Morocco</strong>
+              <span class="muted" style="font-size:12px;">Souks • Coast</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Us -->
+    <section class="section" id="why" style="background:#f8fafc; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);">
+      <div class="container">
+        <div class="section-title">
+          <div>
+            <h2>Why Travelers Choose Travaholica</h2>
+            <p>Clear differentiation beats generic travel claims. Keep this section honest and specific.</p>
+          </div>
+        </div>
+
+        <div class="grid why-grid">
+          <div class="why">
+            <div class="icon">🧩</div>
+            <h3>Handcrafted itineraries</h3>
+            <p>Designed to balance highlights with hidden gems — with time to actually enjoy the place.</p>
+          </div>
+          <div class="why">
+            <div class="icon">🧭</div>
+            <h3>Local expert guides</h3>
+            <p>Travel with people who live the culture — better stories, smoother logistics, safer routes.</p>
+          </div>
+          <div class="why">
+            <div class="icon">🛡️</div>
+            <h3>Stress-free planning</h3>
+            <p>From pickup to hotels to day-by-day guidance, we handle the details so you can relax.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section" id="reviews">
+      <div class="container">
+        <div class="section-title">
+          <div>
+            <h2>What Our Travelers Say</h2>
+            <p>Don't show "No reviews". If you're early, add 2–3 real testimonials and expand later.</p>
+          </div>
+          <a class="btn btn-ghost" href="#">View all reviews</a>
+        </div>
+
+        <div class="grid test-grid">
+          <div class="quote">
+            <div class="rating"><span class="stars">★★★★★</span> 5.0</div>
+            <p>"Everything was seamless — the guide made the history come alive. 10/10."</p>
+            <div class="who">
+              <div class="avatar"><img alt="Traveler avatar" src="https://i.pravatar.cc/80?img=12"></div>
+              <div>
+                <strong>Sarah M.</strong>
+                <span>UK • Egypt Highlights</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="quote">
+            <div class="rating"><span class="stars">★★★★★</span> 5.0</div>
+            <p>"The itinerary was perfect — not rushed, and the local spots were incredible."</p>
+            <div class="who">
+              <div class="avatar"><img alt="Traveler avatar" src="https://i.pravatar.cc/80?img=47"></div>
+              <div>
+                <strong>Michael R.</strong>
+                <span>USA • Cairo & Giza</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="quote">
+            <div class="rating"><span class="stars">★★★★★</span> 4.9</div>
+            <p>"We felt taken care of from start to finish. Communication was fast and clear."</p>
+            <div class="who">
+              <div class="avatar"><img alt="Traveler avatar" src="https://i.pravatar.cc/80?img=7"></div>
+              <div>
+                <strong>Nina K.</strong>
+                <span>Germany • Nepal Trip</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Email capture + final CTA -->
+    <section class="section" id="contact" style="padding-top:0;">
+      <div class="container">
+        <div class="cta-box">
+          <div>
+            <h3>Get exclusive travel deals & early access</h3>
+            <p>Join our list for limited offers. (MVP tip: offer <strong>5% off</strong> your first booking.)</p>
+          </div>
+          <form class="email-form" id="emailForm">
+            <label class="sr" for="newsletter">Email</label>
+            <input id="newsletter" type="email" placeholder="you@example.com" required />
+            <button class="btn btn-primary" type="submit">Get deals</button>
+            <span id="emailMsg" class="muted" style="font-size:12px;"></span>
+          </form>
+        </div>
+
+        <div style="margin-top: 18px; display:flex; gap: 10px; flex-wrap: wrap;">
+          <a class="btn btn-primary" href="#tours">Explore tours</a>
+          <a class="btn btn-ghost" href="#top">Back to top</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container footer-grid">
+        <div>
+          <div class="brand" style="margin-bottom: 12px;">
+            <span class="logo" aria-hidden="true"></span>
+            <span>Travaholica</span>
+          </div>
+          <p class="muted" style="margin:0; max-width: 44ch;">
+            Handcrafted journeys designed by local experts — built for travelers who want authenticity and ease.
+          </p>
+          <div class="fineprint">© <span id="year"></span> Travaholica. All rights reserved.</div>
+        </div>
+
+        <div>
+          <h4>Company</h4>
+          <a href="#">About</a>
+          <a href="#">FAQs</a>
+          <a href="#">Terms</a>
+          <a href="#">Privacy</a>
+        </div>
+
+        <div>
+          <h4>Explore</h4>
+          <a href="#tours">Tours</a>
+          <a href="#destinations">Destinations</a>
+          <a href="#reviews">Reviews</a>
+        </div>
+
+        <div>
+          <h4>Need help?</h4>
+          <a href="tel:+20123456789">Call: +20 123 456 789</a>
+          <a href="mailto:info@travaholica.com">Email: info@travaholica.com</a>
+          <a href="#">WhatsApp</a>
+        </div>
+      </div>
+    </footer>
