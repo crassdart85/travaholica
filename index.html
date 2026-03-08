@@ -747,6 +747,9 @@
         <a href="tel:+20123456789">Call: +20 123 456 789</a>
         <a href="mailto:info@travaholica.com">Email: info@travaholica.com</a>
         <a href="#">WhatsApp</a>
+        <a href="https://web.facebook.com/people/Travaholica/100063499302538" target="_blank" rel="noopener noreferrer">Facebook</a>
+        <a href="https://www.tripadvisor.com/Attraction_Review-g946992-d27494028-Reviews-Travaholica-Schoneiche_Brandenburg.html" target="_blank" rel="noopener noreferrer">Tripadvisor</a>
+        <a href="https://www.instagram.com/travaholica" target="_blank" rel="noopener noreferrer">Instagram</a>
       </div>
     </div>
   </footer>
