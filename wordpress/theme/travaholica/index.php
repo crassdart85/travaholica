@@ -453,7 +453,7 @@
         <!-- Card 1 -->
         <article class="card">
           <div class="card-media">
-            <img alt="Nile cruise" src="https://images.unsplash.com/photo-1582582621959-48d27397dc4c?auto=format&fit=crop&w=1400&q=80">
+            <img alt="Nile cruise" src="images/nile-cruise.jpg">
             <span class="tag">Featured</span>
             <button class="fav" aria-label="Add to wishlist">
               <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
@@ -486,7 +486,7 @@
         <!-- Card 2 -->
         <article class="card">
           <div class="card-media">
-            <img alt="Pyramids" src="https://images.unsplash.com/photo-1544986581-efac024faf62?auto=format&fit=crop&w=1400&q=80">
+            <img alt="Pyramids" src="images/cairo-giza-group.jpg">
             <button class="fav" aria-label="Add to wishlist">
               <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
                 <path d="M20.8 4.6c-1.5-1.4-3.9-1.4-5.4 0l-.7.7-.7-.7c-1.5-1.4-3.9-1.4-5.4 0-1.7 1.6-1.7 4.2 0 5.8L12 21l8.8-10.6c1.7-1.6 1.7-4.2 0-5.8z"/>
@@ -518,7 +518,7 @@
         <!-- Card 3 -->
         <article class="card">
           <div class="card-media">
-            <img alt="Himalayas trek" src="https://images.unsplash.com/photo-1544735716-6d594f2b36c6?auto=format&fit=crop&w=1400&q=80">
+            <img alt="Himalayas trek" src="images/nepal-mountains.jpg">
             <button class="fav" aria-label="Add to wishlist">
               <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
                 <path d="M20.8 4.6c-1.5-1.4-3.9-1.4-5.4 0l-.7.7-.7-.7c-1.5-1.4-3.9-1.4-5.4 0-1.7 1.6-1.7 4.2 0 5.8L12 21l8.8-10.6c1.7-1.6 1.7-4.2 0-5.8z"/>

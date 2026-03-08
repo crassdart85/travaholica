@@ -29,3 +29,26 @@
     - `184anthonyk`
     - `Sara B`
   - `https://travaholica.vercel.app/api/reviews` returned `200` with `3` reviews (older deployed payload).
+
+## 2026-03-08 (Tour Card Local Images)
+- Replaced tour card remote image URLs with local asset paths:
+  - Nile Cruise card -> `images/nile-cruise.jpg`
+  - Cairo/Giza card -> `images/cairo-giza-group.jpg`
+  - Nepal card -> `images/nepal-mountains.jpg`
+- Updated files:
+  - `index.html`
+  - `index.html.txt`
+  - `wordpress/elementor-html-widget.html`
+  - `wordpress/theme/travaholica/index.php`
+  - `wordpress/travaholica-elementor-template.json`
+  - `images/README.md`
+- Live test results before this push:
+  - `https://travaholica.vercel.app/` returned `200` but did not include:
+    - `images/nile-cruise.jpg`
+    - `images/cairo-giza-group.jpg`
+    - `images/nepal-mountains.jpg`
+  - `https://travaholica.vercel.app/api/reviews` returned `200` with `5` reviews and included:
+    - `Vacationer`
+    - `Camper331995`
+    - `184anthonyk`
+    - `Sara B`
