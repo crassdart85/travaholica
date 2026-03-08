@@ -645,44 +645,44 @@
       <div class="section-title">
         <div>
           <h2>What Our Travelers Say</h2>
-          <p>Don’t show “No reviews”. If you’re early, add 2–3 real testimonials and expand later.</p>
+          <p>Pulled from public social pages. Open each source to verify and read more feedback.</p>
         </div>
-        <a class="btn btn-ghost" href="#" title="Link to Google/Tripadvisor reviews">View all reviews</a>
+        <a class="btn btn-ghost" href="https://www.tripadvisor.com/Attraction_Review-g946992-d27494028-Reviews-Travaholica-Schoneiche_Brandenburg.html" target="_blank" rel="noopener noreferrer" title="Open Tripadvisor reviews">View Tripadvisor</a>
       </div>
 
-      <div class="grid test-grid">
+      <div class="grid test-grid" id="reviewsGrid">
         <div class="quote">
-          <div class="rating"><span class="stars">★★★★★</span> 5.0</div>
-          <p>“Everything was seamless — the guide made the history come alive. 10/10.”</p>
+          <div class="rating"><span class="stars">★★★★★</span> Facebook Review</div>
+          <p>"One of best tours in berlin. I went with them and totally happy with their service."</p>
           <div class="who">
-            <div class="avatar"><img alt="Traveler avatar" src="https://i.pravatar.cc/80?img=12"></div>
+            <div class="avatar"><img alt="Reviewer avatar" src="https://i.pravatar.cc/80?img=33"></div>
             <div>
-              <strong>Sarah M.</strong>
-              <span>UK • Egypt Highlights</span>
+              <strong>Rez Imani</strong>
+              <span>Facebook review • September 17, 2025</span>
             </div>
           </div>
         </div>
 
         <div class="quote">
-          <div class="rating"><span class="stars">★★★★★</span> 5.0</div>
-          <p>“The itinerary was perfect — not rushed, and the local spots were incredible.”</p>
+          <div class="rating"><span class="stars">Social</span> Facebook</div>
+          <p>Public page status: "Not yet rated (3 Reviews)". See all available recommendations directly on Facebook.</p>
           <div class="who">
-            <div class="avatar"><img alt="Traveler avatar" src="https://i.pravatar.cc/80?img=47"></div>
+            <div class="avatar"><img alt="Facebook icon style avatar" src="https://i.pravatar.cc/80?img=15"></div>
             <div>
-              <strong>Michael R.</strong>
-              <span>USA • Cairo & Giza</span>
+              <strong>Facebook Reviews</strong>
+              <span><a href="https://www.facebook.com/profile.php?id=100063499302538&sk=reviews" target="_blank" rel="noopener noreferrer">Open review feed</a></span>
             </div>
           </div>
         </div>
 
         <div class="quote">
-          <div class="rating"><span class="stars">★★★★★</span> 4.9</div>
-          <p>“We felt taken care of from start to finish. Communication was fast and clear.”</p>
+          <div class="rating"><span class="stars">Social</span> More feedback</div>
+          <p>More traveler proof is available on Tripadvisor and Instagram. Follow for new stories and recent trips.</p>
           <div class="who">
-            <div class="avatar"><img alt="Traveler avatar" src="https://i.pravatar.cc/80?img=7"></div>
+            <div class="avatar"><img alt="Social links avatar" src="https://i.pravatar.cc/80?img=5"></div>
             <div>
-              <strong>Nina K.</strong>
-              <span>Germany • Nepal Trip</span>
+              <strong>Social Channels</strong>
+              <span><a href="https://www.instagram.com/travaholica" target="_blank" rel="noopener noreferrer">Instagram</a> • <a href="https://web.facebook.com/people/Travaholica/100063499302538" target="_blank" rel="noopener noreferrer">Facebook</a></span>
             </div>
           </div>
         </div>
@@ -783,6 +783,49 @@
       emailMsg.textContent = "You're in! Check your inbox soon.";
       emailForm.reset();
     });
+
+    const reviewsGrid = document.getElementById('reviewsGrid');
+
+    async function loadSocialReviews() {
+      if (!reviewsGrid) return;
+      try {
+        const response = await fetch('/api/reviews', { cache: 'no-store' });
+        if (!response.ok) return;
+        const payload = await response.json();
+        if (!payload?.reviews?.length) return;
+
+        const cards = payload.reviews.slice(0, 3).map((review, index) => {
+          const avatarId = [33, 15, 5][index] || 12;
+          const safeQuote = String(review.quote || '').replace(/</g, '&lt;');
+          const safeAuthor = String(review.author || '').replace(/</g, '&lt;');
+          const safeMeta = String(review.meta || '').replace(/</g, '&lt;');
+          const ratingLabel = String(review.ratingLabel || 'Social').replace(/</g, '&lt;');
+          const platform = String(review.platform || '').replace(/</g, '&lt;');
+          const sourceUrl = review.sourceUrl || '#';
+          const sourceLabel = String(review.sourceLabel || 'Source').replace(/</g, '&lt;');
+
+          return `
+            <div class="quote">
+              <div class="rating"><span class="stars">${ratingLabel}</span> ${platform}</div>
+              <p>"${safeQuote}"</p>
+              <div class="who">
+                <div class="avatar"><img alt="Reviewer avatar" src="https://i.pravatar.cc/80?img=${avatarId}"></div>
+                <div>
+                  <strong>${safeAuthor}</strong>
+                  <span>${safeMeta} · <a href="${sourceUrl}" target="_blank" rel="noopener noreferrer">${sourceLabel}</a></span>
+                </div>
+              </div>
+            </div>
+          `;
+        });
+
+        reviewsGrid.innerHTML = cards.join('');
+      } catch (error) {
+        // Keep fallback testimonials already in HTML.
+      }
+    }
+
+    loadSocialReviews();
 
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>

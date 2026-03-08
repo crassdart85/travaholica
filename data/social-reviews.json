@@ -1,0 +1,29 @@
+[
+  {
+    "platform": "Facebook Review",
+    "ratingLabel": "★★★★★",
+    "quote": "One of best tours in berlin. I went with them and totally happy with their service.",
+    "author": "Rez Imani",
+    "meta": "Facebook review • September 17, 2025",
+    "sourceUrl": "https://www.facebook.com/profile.php?id=100063499302538&sk=reviews",
+    "sourceLabel": "Open source"
+  },
+  {
+    "platform": "Facebook",
+    "ratingLabel": "Social",
+    "quote": "Public page status: \"Not yet rated (3 Reviews)\". See all available recommendations directly on Facebook.",
+    "author": "Facebook Reviews",
+    "meta": "Public recommendations feed",
+    "sourceUrl": "https://www.facebook.com/profile.php?id=100063499302538&sk=reviews",
+    "sourceLabel": "Open review feed"
+  },
+  {
+    "platform": "More feedback",
+    "ratingLabel": "Social",
+    "quote": "More traveler proof is available on Tripadvisor and Instagram. Follow for new stories and recent trips.",
+    "author": "Social Channels",
+    "meta": "Tripadvisor and Instagram",
+    "sourceUrl": "https://www.tripadvisor.com/Attraction_Review-g946992-d27494028-Reviews-Travaholica-Schoneiche_Brandenburg.html",
+    "sourceLabel": "Open Tripadvisor"
+  }
+]
