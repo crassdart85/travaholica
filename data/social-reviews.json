@@ -1,29 +1,52 @@
 [
   {
-    "platform": "Facebook Review",
+    "platform": "Client Review",
     "ratingLabel": "★★★★★",
-    "quote": "One of best tours in berlin. I went with them and totally happy with their service.",
-    "author": "Rez Imani",
-    "meta": "Facebook review • September 17, 2025",
-    "sourceUrl": "https://www.facebook.com/profile.php?id=100063499302538&sk=reviews",
-    "sourceLabel": "Open source"
+    "title": "A great guide. Friendly, reliable, considerate, and knowledgeable.",
+    "quote": "Mahmoud is the guide to get when visiting Egypt. Easygoing and filled with knowledge about the history and culture of Egypt and its people. He was a super choice for our one week trip to Cairo and Luxor. When arriving at the airport in the pre-dawn hours, he was there to meet us. All the transportation he arranged was comfortable and reliable. He was a friendly and very trusted partner as we toured the ancient sites, traveled through the rural lands, visited restaurants to get authentic local food, and walked the streets and sailed on the waters of the country. Five stars!",
+    "author": "Vacationer",
+    "meta": "Mar 2024 • Lebanon, New Hampshire",
+    "sourceUrl": null,
+    "sourceLabel": null
   },
   {
-    "platform": "Facebook",
-    "ratingLabel": "Social",
-    "quote": "Public page status: \"Not yet rated (3 Reviews)\". See all available recommendations directly on Facebook.",
-    "author": "Facebook Reviews",
-    "meta": "Public recommendations feed",
-    "sourceUrl": "https://www.facebook.com/profile.php?id=100063499302538&sk=reviews",
-    "sourceLabel": "Open review feed"
+    "platform": "Client Review",
+    "ratingLabel": "★★★★☆",
+    "title": "A tour in Berlin",
+    "quote": "A very nice tour in Berlin, the view was nice and the expert Mr. Mahmoud had very good information about the museum and the tourist places, the tour was short but it was very fruitful.",
+    "author": "Camper331995",
+    "meta": "Apr 2024 • Friends",
+    "sourceUrl": null,
+    "sourceLabel": null
   },
   {
-    "platform": "More feedback",
-    "ratingLabel": "Social",
-    "quote": "More traveler proof is available on Tripadvisor and Instagram. Follow for new stories and recent trips.",
-    "author": "Social Channels",
-    "meta": "Tripadvisor and Instagram",
-    "sourceUrl": "https://www.tripadvisor.com/Attraction_Review-g946992-d27494028-Reviews-Travaholica-Schoneiche_Brandenburg.html",
-    "sourceLabel": "Open Tripadvisor"
+    "platform": "Client Review",
+    "ratingLabel": "★★★★★",
+    "title": "An unforgettable experience in Egypt",
+    "quote": "I am very grateful to have had Mahmoud guide us through our visit to Egypt. We went to sites in Cairo and Luxor. Mahmoud filled every minute with commentary and explanations of the historical sites, which shows that he is extremely knowledgeable. Mahmoud went to great lengths to accommodate the specific needs of each individual in our group, and he quickly became a part of our group of friends. During my visit to Egypt I wanted to learn as much as possible about the historical sites, not simply see them and take pictures. Mahmoud accomplished that, and we were very lucky to have him with us.",
+    "author": "Matt",
+    "meta": "Mar 2024 • Friends",
+    "sourceUrl": null,
+    "sourceLabel": null
+  },
+  {
+    "platform": "Client Review",
+    "ratingLabel": "★★★★★",
+    "title": "Potsdam and Berlin touring",
+    "quote": "Mahmoud Shaaban, and Dennis, were both fantastic. Never pushy, or insistent. In fact we met Mahmoud, said we'd be back, and because he was so personable and friendly, we did indeed reach out to set up a tour, with his colleague Dennis. The tour was great, and we learned so much as we went along. I'd definitely recommend Mahmoud and Dennis to anyone who wants someone with knowledge of the area, and who can tailor a tour to your needs.",
+    "author": "184anthonyk",
+    "meta": "Oct 2024 • Elizabeth, New Jersey",
+    "sourceUrl": null,
+    "sourceLabel": null
+  },
+  {
+    "platform": "Client Review",
+    "ratingLabel": "★★★★★",
+    "title": "Unforgettable Egypt",
+    "quote": "We had the opportunity to embark on a trip to Egypt organized by Mahmoud and Travaholica. It was an amazing experience, and the itinerary was so well-planned that we were able to visit all the key sites while also having ample time to explore and fully appreciate this incredible country with its captivating history. Mahmoud and the team were always available to answer our questions and assist us in making this dream trip a reality. Thank you all!",
+    "author": "Sara B",
+    "meta": "Jul 2024",
+    "sourceUrl": null,
+    "sourceLabel": null
   }
 ]

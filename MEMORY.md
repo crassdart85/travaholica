@@ -13,3 +13,19 @@
   - `wordpress/travaholica-elementor-template.json`
 - Live check run against `https://travaholica.vercel.app/` from this environment did not find the three social links in the returned HTML at check time.
 - User noted the live site was already updated manually.
+
+## 2026-03-08 (Real Client Reviews Feed)
+- Added real client review content to `data/social-reviews.json` and updated dynamic testimonial rendering in:
+  - `index.html`
+  - `index.html.txt`
+- Renderer now supports:
+  - Optional review title field
+  - Optional source link field
+  - Rendering all reviews from the feed (no 3-item cap)
+- Live test results before this push:
+  - `https://travaholica.vercel.app/` returned `200` but did not yet include reviewer names:
+    - `Vacationer`
+    - `Camper331995`
+    - `184anthonyk`
+    - `Sara B`
+  - `https://travaholica.vercel.app/api/reviews` returned `200` with `3` reviews (older deployed payload).

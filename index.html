@@ -794,25 +794,30 @@
         const payload = await response.json();
         if (!payload?.reviews?.length) return;
 
-        const cards = payload.reviews.slice(0, 3).map((review, index) => {
-          const avatarId = [33, 15, 5][index] || 12;
+        const cards = payload.reviews.map((review, index) => {
+          const avatarId = [12, 47, 7, 21, 32, 15][index % 6];
+          const safeTitle = String(review.title || '').replace(/</g, '&lt;');
           const safeQuote = String(review.quote || '').replace(/</g, '&lt;');
           const safeAuthor = String(review.author || '').replace(/</g, '&lt;');
           const safeMeta = String(review.meta || '').replace(/</g, '&lt;');
           const ratingLabel = String(review.ratingLabel || 'Social').replace(/</g, '&lt;');
           const platform = String(review.platform || '').replace(/</g, '&lt;');
-          const sourceUrl = review.sourceUrl || '#';
+          const sourceUrl = String(review.sourceUrl || '');
           const sourceLabel = String(review.sourceLabel || 'Source').replace(/</g, '&lt;');
+          const sourceHtml = /^https?:\/\//i.test(sourceUrl)
+            ? ` · <a href="${sourceUrl}" target="_blank" rel="noopener noreferrer">${sourceLabel}</a>`
+            : '';
+          const body = safeTitle ? `<strong>${safeTitle}</strong><br>${safeQuote}` : safeQuote;
 
           return `
             <div class="quote">
               <div class="rating"><span class="stars">${ratingLabel}</span> ${platform}</div>
-              <p>"${safeQuote}"</p>
+              <p>${body}</p>
               <div class="who">
                 <div class="avatar"><img alt="Reviewer avatar" src="https://i.pravatar.cc/80?img=${avatarId}"></div>
                 <div>
                   <strong>${safeAuthor}</strong>
-                  <span>${safeMeta} · <a href="${sourceUrl}" target="_blank" rel="noopener noreferrer">${sourceLabel}</a></span>
+                  <span>${safeMeta}${sourceHtml}</span>
                 </div>
               </div>
             </div>
